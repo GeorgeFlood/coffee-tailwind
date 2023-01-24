@@ -1,11 +1,11 @@
 import React from "react";
-
-const coffeeSelection = function ({ img, title, info }) {
-  <div>
-    <img src={img} alt="coffee image"></img>
-    <h3>{title}</h3>
-    <p>{info}</p>
-  </div>;
+const CoffeeSelection = ({ img, title, info }) => {
+  return (
+    <div className="mt-16">
+      <img src={img} alt="coffee img" />
+      <h3 className="text-2xl font-semibold text-center">{title}</h3>
+      <p className="text-center mt-4">{info}</p>
+    </div>
+  );
 };
-
-export default coffeeSelection;
+export default CoffeeSelection;

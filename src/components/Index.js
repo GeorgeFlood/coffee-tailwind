@@ -1,8 +1,11 @@
 import "../tailwind.css";
-import coffeeSelection from "./coffeeSelection";
+import CoffeeSelection from "./CoffeeSelection";
 import Logo from "../assets/shared/desktop/logo.svg";
 import Hamburger from "../assets/shared/mobile/icon-hamburger.svg";
 import Gran from "../assets/home/desktop/image-gran-espresso.png";
+import Planalto from "../assets/home/desktop/image-planalto.png";
+import Piccollo from "../assets/home/desktop/image-piccollo.png";
+import Danche from "../assets/home/desktop/image-danche.png";
 
 const Index = function () {
   return (
@@ -34,10 +37,25 @@ const Index = function () {
         <h1 className="text-center mt-16 text-4xl font-semibold text-gray-400">
           Our collection
         </h1>
-        <coffeeSelection
+        <CoffeeSelection
           img={Gran}
           title="Gran Espresso"
           info="Light and flavorsome blend with cocoa and black pepper for an intense experience."
+        />
+        <CoffeeSelection
+          img={Planalto}
+          title="Planalto"
+          info="Brazilian dark roast with rich and valvety body, and hints of fruits and nuts."
+        />
+        <CoffeeSelection
+          img={Piccollo}
+          title="Piccollo"
+          info="Mild and smooth blend featuring notes of toasted almond and dried cherry."
+        />
+        <CoffeeSelection
+          img={Danche}
+          title="Danche"
+          info="Ethiopian hand-harvested blend densely packed with vibrant fruit notes."
         />
       </div>
     </div>
