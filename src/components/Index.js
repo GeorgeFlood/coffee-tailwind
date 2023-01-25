@@ -1,4 +1,5 @@
 import "../tailwind.css";
+
 import CoffeeSelection from "./CoffeeSelection";
 import Logo from "../assets/shared/desktop/logo.svg";
 import Hamburger from "../assets/shared/mobile/icon-hamburger.svg";
@@ -37,6 +38,7 @@ const Index = function () {
         <h1 className="text-center mt-16 text-4xl font-semibold text-gray-400">
           Our collection
         </h1>
+
         <CoffeeSelection
           img={Gran}
           title="Gran Espresso"

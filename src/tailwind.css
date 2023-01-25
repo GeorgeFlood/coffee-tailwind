@@ -19,3 +19,15 @@ z code {
   background-size: cover;
   height: 35rem;
 }
+
+.opacity-100 {
+  opacity: 1;
+  transition: opacity 1s;
+  text-align: center;
+}
+
+.opacity-0 {
+  opacity: 0;
+  transition: opacity 1s;
+  text-align: center;
+}
