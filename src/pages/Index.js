@@ -63,7 +63,7 @@ const Index = function () {
         />
       </div>
 
-      <div className="bg-slate-600 my-14">
+      <div className="bg-slate-600 my-14 py-6 rounded shadow-lg">
         <h2 className="text-3xl text-center text-slate-50">Why choose us?</h2>
         <p className="text-center my-5 text-slate-300">
           A large part of our role is choosing which particular coffees will be
@@ -74,6 +74,18 @@ const Index = function () {
         <ContentBox
           title="Best quality"
           info="Discover an endles variety of the world's best artisan coffee from each of our roasters"
+          img={coffeeBean}
+        />
+
+        <ContentBox
+          title="Exclusive Benefits"
+          info="Special offers and swag when you subscribe, including 30% off your first shipment."
+          img={coffeeBean}
+        />
+
+        <ContentBox
+          title="Free Shipping"
+          info="We cover the cost and coffee is delivered fast. Peak freshness: guaranteed."
           img={coffeeBean}
         />
       </div>
