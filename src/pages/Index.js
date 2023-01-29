@@ -1,12 +1,14 @@
 import "../tailwind.css";
 
-import CoffeeSelection from "./CoffeeSelection";
+import CoffeeSelection from "../components/CoffeeSelection";
+import ContentBox from "../components/ContentBox";
 import Logo from "../assets/shared/desktop/logo.svg";
 import Hamburger from "../assets/shared/mobile/icon-hamburger.svg";
 import Gran from "../assets/home/desktop/image-gran-espresso.png";
 import Planalto from "../assets/home/desktop/image-planalto.png";
 import Piccollo from "../assets/home/desktop/image-piccollo.png";
 import Danche from "../assets/home/desktop/image-danche.png";
+import coffeeBean from "../assets/home/desktop/icon-coffee-bean.svg";
 
 const Index = function () {
   return (
@@ -58,6 +60,21 @@ const Index = function () {
           img={Danche}
           title="Danche"
           info="Ethiopian hand-harvested blend densely packed with vibrant fruit notes."
+        />
+      </div>
+
+      <div className="bg-slate-600 my-14">
+        <h2 className="text-3xl text-center text-slate-50">Why choose us?</h2>
+        <p className="text-center my-5 text-slate-300">
+          A large part of our role is choosing which particular coffees will be
+          featured in our range. This means working closely with the best coffee
+          growers to give you a more impactful experience on every level.
+        </p>
+
+        <ContentBox
+          title="Best quality"
+          info="Discover an endles variety of the world's best artisan coffee from each of our roasters"
+          img={coffeeBean}
         />
       </div>
     </div>

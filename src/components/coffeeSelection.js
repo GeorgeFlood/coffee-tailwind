@@ -1,6 +1,6 @@
 import React from "react";
 import { InView } from "react-intersection-observer";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const CoffeeSelection = ({ img, title, info }) => {
   const [isInView, setIsInView] = useState(false);

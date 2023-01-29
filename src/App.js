@@ -1,8 +1,8 @@
 import "./input.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Index from "./components/Index";
-import Plan from "./components/Plan";
-import About from "./components/About";
+import Index from "./pages/Index";
+import Plan from "./pages/Plan";
+import About from "./pages/About";
 
 function App() {
   return (
