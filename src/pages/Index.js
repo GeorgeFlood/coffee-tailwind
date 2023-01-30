@@ -2,6 +2,8 @@ import "../tailwind.css";
 
 import CoffeeSelection from "../components/CoffeeSelection";
 import ContentBox from "../components/ContentBox";
+import MobileFooter from "../components/MobileFooter";
+import Steps from "../components/Steps";
 import Logo from "../assets/shared/desktop/logo.svg";
 import Hamburger from "../assets/shared/mobile/icon-hamburger.svg";
 import Gran from "../assets/home/desktop/image-gran-espresso.png";
@@ -91,6 +93,30 @@ const Index = function () {
           img={Truck}
         />
       </div>
+
+      <div className="text-center">
+        <h2 className="text-3xl text-center weight-bold">How it works</h2>
+        <Steps
+          num="01"
+          title="Pick your coffee"
+          info="Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out."
+        />
+        <Steps
+          num="02"
+          title="Choose your frequency"
+          info="Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal."
+        />
+        <Steps
+          num="03"
+          title="Receive and enjoy!"
+          info="We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience."
+        />
+
+        <button className="p-4 bg-custom-green rounded-md text-slate-50 weight-bold">
+          Create your plan
+        </button>
+      </div>
+      <MobileFooter />
     </div>
   );
 };

@@ -13,6 +13,7 @@ module.exports = {
       },
       colors: {
         "custom-green": "#0D8784",
+        "custom-biege": "#FED6BA",
       },
     },
   },
